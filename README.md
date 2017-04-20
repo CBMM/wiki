@@ -4,9 +4,9 @@ Welcome to the CBMM wiki! This wiki is a place to gather documentation on how to
 
 [Home](Home)
 
-[UROP Checklist](onboard/Checklist)
+[UROP Checklist](onboard/Checklist.md)
 
-[OpenMind](resources/OpenMind)
+[OpenMind](resources/OpenMind.md)
 
-[Polestar](resources/Polestar)
+[Polestar](resources/Polestar.md)
 

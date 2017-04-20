@@ -1,6 +1,6 @@
 ## Getting started at CBMM
 
-Welcome to CBMM! The purpose of this checklist is to prepare your system to run experiments at CBMM using [OpenMind](resources/OpenMind) and [Polestar](resources/Polestar). Once you have gotten each of the following technologies going on your machine you will be able to deploy code to those clusters, process some data, and get the results back. We've supplied instructions and resources on how to get set up for each requisite piece of technology.
+Welcome to CBMM! The purpose of this checklist is to prepare your system to run experiments at CBMM using [OpenMind](resources/OpenMind.md) and [Polestar](resources/Polestar.md). Once you have gotten each of the following technologies going on your machine you will be able to deploy code to those clusters, process some data, and get the results back. We've supplied instructions and resources on how to get set up for each requisite piece of technology.
 
 ### Slack
 
