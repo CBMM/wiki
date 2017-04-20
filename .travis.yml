@@ -10,6 +10,11 @@ script:
   git merge upstream/master --no-edit
   git push origin HEAD:master > /dev/null 2>&1
   git push upstream HEAD:master > /dev/null 2>&1
+
 env:
   matrix:
     secure: RbmuBLVd1RLOMQzJCA+GYbczK7YLuv24beQ1NAXMaDp9IUcYKZU22XtJ7pPT2yX244Hg4NPf9Sw16hLqr30zw5Lx9xFKa8fLX/T1GJpOR5viOMsMOo1KY+iePkTbFVqP/LInqTei9yTqgrUCVPucQpZVrpHYlEK2n1aAmXOahP2cdj+dQ7WY+gKkn++v47GMJQg6ZKoMLGY1DR3b4WU5MCBjhbWzNgzRHGqsJN/9jm1lQ5nhoY/MBbqEQScfNRTmfKOZsOJt2TvEXwLeRnM2n06YkwhHFaTYx94XZH4KnvgqcPKLelF8jwPf15FT6siVUNMZ4De3KNqlm8BEWsHuBo6GqpPkOxfADyN11DMWrDHRqRofS3OGkaPX3VAJwxHNzOEZd2DNaOm0B8y61wtp8VXBVMhaSMeJf2blmIUbtSZ9gRaFuUat9bq68bc5S/hICXVXWsX/1S+tfge2Y71Uwemm1SKyzyegQqP2/5HRRVDXx+T8sb+/ek4RLiCu6rpQs0sCTs+ZWFGCHkOp3bKHrUx64hmcuJk3H5WOok18rENShKZBYcfZS+dlaLZBQV+kTylCx8qpynmLXMtQc/M4RULXYY7lCFZWid0eNouPiyLQEkuZ+XIneRK/YcU7tg/rXqiKPsq4Ymem1P3addIrRls2pfEF8/OhXdJqCfiRa/o=
+
+notifications:
+  email:
+    on_success: never
