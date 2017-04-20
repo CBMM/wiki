@@ -2,11 +2,11 @@ Welcome to the CBMM wiki! This wiki is a place to gather documentation on how to
 
 ## Pages of Interest
 
-[Home](Home)
+[[Home]]
 
-[UROP Checklist](onboard/Checklist.md)
+[[UROP Checklist]]
 
-[OpenMind](resources/OpenMind.md)
+[[OpenMind]]
 
-[Polestar](resources/Polestar.md)
+[[Polestar]]
 
