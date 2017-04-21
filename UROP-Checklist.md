@@ -190,3 +190,27 @@ Matlab is for data crunching.
   * [Matlab documentation](https://www.mathworks.com/help/matlab/)
 
   * [Lynda course](https://www.lynda.com/MATLAB-training-tutorials/1646-0.html)
+
+## Environments
+
+### OpenMind
+
+OpenMind is a computing cluster shared by all neuroscience at MIT. You will need to get acquainted with it in order to run serious experiments. OpenMind is primarily accessed through `ssh` and managed with [[SLURM]].
+
+#### Where to get it
+
+[Getting started with OpenMind](https://github.mit.edu/MGHPCC/OpenMind/wiki/Cookbook:-Getting-started)
+
+  You'll have to log in with your MIT credentials in order to access the MIT github. It can take a few days to be granted access to OpenMind.
+
+#### How to use it
+
+  * [Video tutorial](https://www.youtube.com/watch?v=NGHlPNiYJcA)
+
+  * [OpenMind wiki](https://github.mit.edu/MGHPCC/OpenMind/wiki)
+
+    You will need to log in with your MIT credentials in order to access the wiki.
+
+  * [[OpenMind]] on this wiki
+
+    Will be a little anemic until we've developed more tools for working with OpenMind.
