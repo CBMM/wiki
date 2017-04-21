@@ -4,7 +4,7 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
 
 ### Slack
 
-CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away! To get invited to the CBMM Slack [submit an issue here](TODO-FILLME).
+CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away! The person who is on-boarding you should invite you to Slack.
 
 ### Command Line
 
@@ -122,3 +122,7 @@ Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control)
   * [Github Documentation](https://help.github.com/articles/set-up-git/)
 
     Good documentation that will also set you up with GitHub.
+
+### GitHub
+
+If you're on GitHub, great! If you're not, you will need to get an account there. Once you have an account, the person on-boarding you will invite you to the [CBMM GitHub organization](https://github.com/CBMM).
