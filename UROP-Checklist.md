@@ -133,6 +133,8 @@ If you're already comfortable with `git`, feel free to skip this section.
 
 If you're on GitHub, great! If you're not, you will need to get an account there. Once you have an account, the person on-boarding you will invite you to the [CBMM GitHub organization](https://github.com/CBMM).
 
+## Programming Languages
+
 ### Python
 
 Python is a programming language that is quite popular in scientific research. There are some associated technologies that make using Python more robust and effective.
