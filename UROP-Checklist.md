@@ -84,3 +84,41 @@ The situation on Windows is a bit different.
   * [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
 
   * [Github Explains SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+### Git
+
+If you're already comfortable with Git, feel free to skip this section.
+
+Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control). It will keep track of your files and changes to those files. This helps keep your projects in a consistent state and easily recoverable from errors. It will also make it easier for you to share your code with others and collaborate on projects.
+
+#### Where to get it
+
+##### Linux
+
+[Installation instructions here](https://git-scm.com/download/linux)
+
+##### Mac
+
+[Go here and click on 'Mac OS X'](https://git-scm.com/downloads)
+
+##### Windows
+
+[Git for Windows](https://git-for-windows.github.io/)
+
+#### How to use it
+
+  * [The Git Book](https://git-scm.com/book/en/v2)
+
+    In particular chapters `4. Git on the Server` and `6. GitHub` are valuable to read.
+
+  * [Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+    Always handy!
+
+  * [Lynda Git training](https://www.lynda.com/Git-training-tutorials/1383-0.html)
+
+    MIT students get free access to Lynda.
+
+  * [Github Documentation](https://help.github.com/articles/set-up-git/)
+
+    Good documentation that will also set you up with GitHub.
