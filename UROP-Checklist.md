@@ -2,6 +2,8 @@
 
 Welcome to CBMM! The purpose of this checklist is to prepare your system to run experiments at CBMM using [[OpenMind]] and [[Polestar]]. Once you have gotten each of the following technologies going on your machine you will be able to deploy code to those clusters, process some data, and get the results back. We've supplied instructions and resources on how to get set up for each requisite piece of technology.
 
+## Basic Tools
+
 ### Slack
 
 CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away! The person who is on-boarding you should invite you to Slack.
