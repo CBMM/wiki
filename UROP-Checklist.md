@@ -23,6 +23,8 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
 
 CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away! The person who is on-boarding you should invite you to Slack.
 
+---
+
 ### Command Line
 
 If you know how to use a command line already, feel free to skip this section.
@@ -70,6 +72,8 @@ On Windows the situation is a little trickier. The command line on Windows by de
 
     This guide will teach you how to write _scripts_ for your shell. Scripting allows you to automate complicated shell tasks and invoke them as easily as a basic command.
 
+---
+
 ### SSH
 
 If you know how to use SSH already, feel free to skip this section.
@@ -101,6 +105,8 @@ The situation on Windows is a bit different.
   * [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
 
   * [Github Explains SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+---
 
 ### Git
 
@@ -144,9 +150,13 @@ If you're already comfortable with `git`, feel free to skip this section.
 
     A `.gitignore` file tells `git` which files not to track. These templates will make it easier to use `git` while ignoring noise.
 
+---
+
 ### GitHub
 
 If you're on GitHub, great! If you're not, you will need to get an account there. Once you have an account, the person on-boarding you will invite you to the [CBMM GitHub organization](https://github.com/CBMM).
+
+---
 
 ## Programming Languages
 
@@ -176,6 +186,8 @@ There are two versions of Python which are subtly incompatible with each other, 
 
     This guide will not quite teach the basics of Python, but it will teach you a lot about good practices and how to keep your code clean, well understood, and under control.
 
+---
+
 ### virtualenv
 
 Python comes with a tool for installing packages called `pip`. By default `pip` installs packages globally for your system. This can be bad if you have different projects that require conflicting versions of the same package. It also makes it difficult to reproduce your code elsewhere. `virtualenv` is a tool for both Python 2 and 3 that allows you to isolate the installed packages for different projects. It is highly recommended that you always install the dependencies for a project in a virtual environment.
@@ -192,6 +204,8 @@ Python comes with a tool for installing packages called `pip`. By default `pip` 
 
   * [Quick tutorial](http://libzx.so/main/learning/2016/03/13/best-practice-for-virtualenv-and-git-repos.html)
 
+---
+
 ### Matlab
 
 Matlab is for data crunching.
@@ -205,6 +219,8 @@ Matlab is for data crunching.
   * [Matlab documentation](https://www.mathworks.com/help/matlab/)
 
   * [Lynda course](https://www.lynda.com/MATLAB-training-tutorials/1646-0.html)
+
+---
 
 ## Environments
 
@@ -229,3 +245,5 @@ OpenMind is a computing cluster shared by all neuroscience at MIT. You will need
   * [[OpenMind]] on this wiki
 
     Will be a little anemic until we've developed more tools for working with OpenMind.
+
+---
