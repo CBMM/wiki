@@ -2,7 +2,7 @@
 
 Welcome to CBMM! The purpose of this checklist is to prepare your system to run experiments at CBMM using [[OpenMind]] and [[Polestar]]. Once you have gotten each of the following technologies going on your machine you will be able to deploy code to those clusters, process some data, and get the results back. We've supplied instructions and resources on how to get set up for each requisite piece of technology.
 
-## Table of Contents
+#### Table of Contents
 
 1. [Introduction](#getting-started-at-cbmm)
 2. [Basic Tools](#basic-tools)
