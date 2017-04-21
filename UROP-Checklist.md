@@ -10,7 +10,7 @@ CBMM has a [Slack](https://slack.com) community. This is the fastest way to get 
 
 If you know how to use a command line already, feel free to skip this section.
 
-Depending on your technical background you may already be comfortable interacting with a computer through a command line interface (CLI) instead of a graphical user interface (GUI). It is very important to get used to a command line for doing research. You don't have to become a wizard in order to get stuff done, but you shouldn't feel lost.
+A command line shell allows you to interact with your computer through a text based interface. Most of the tools we use at CBMM are designed to be most efficiently used on the command line.
 
 #### Where to get it
 
@@ -32,7 +32,7 @@ On Windows the situation is a little trickier. The command line on Windows by de
 
   * [Use the Bash shell that comes with git for windows](https://git-for-windows.github.io/)
 
-    This is a lightweight option if you don't want to try to emulate a UNIX shell. Note that this shell won't allow you to do more sophisticated things than interact with Git.
+    This is a lightweight option if you don't want to get a UNIX shell. Note that this shell won't allow you to do more sophisticated things than interact with Git.
 
   * [Use PowerShell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx)
 
