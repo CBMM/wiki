@@ -52,3 +52,35 @@ On Windows the situation is a little trickier. The command line on Windows by de
   * [The Bash Guide](http://guide.bash.academy/)
 
     This guide will teach you how to write _scripts_ for your shell. Scripting allows you to automate complicated shell tasks and invoke them as easily as a basic command.
+
+### SSH
+
+If you know how to use SSH already, feel free to skip this section.
+
+SSH is a network protocol for secure remote access to a machine. We use SSH to connect to OpenMind and Polestar. You can SSH into a machine from the command line and interact with the remote machine as if you were typing directly to it.
+
+#### Where to get it
+
+##### Ubuntu
+
+SSH comes standard on most Linux distributions.
+
+##### Mac
+
+SSH comes standard on Mac.
+
+##### Windows
+
+The situation on Windows is a bit different.
+
+  * If you're using Ubuntu on Windows, you have SSH in your Ubuntu subsystem.
+
+  * If you're using git bash, it comes with ssh.
+
+  * [Get putty otherwise](http://www.putty.org/)
+
+#### How to use it
+
+  * [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+
+  * [Github Explains SSH](https://help.github.com/articles/connecting-to-github-with-ssh/)
