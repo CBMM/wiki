@@ -176,3 +176,17 @@ Python comes with a tool for installing packages called `pip`. By default `pip` 
   * [Hitchhiker's guide to virtualenv](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/#virtualenv)
 
   * [Quick tutorial](http://libzx.so/main/learning/2016/03/13/best-practice-for-virtualenv-and-git-repos.html)
+
+### Matlab
+
+Matlab is for data crunching.
+
+#### Where to get it
+
+  [Get Matlab from MIT](https://ist.mit.edu/matlab/all)
+
+#### How to use it
+
+  * [Matlab documentation](https://www.mathworks.com/help/matlab/)
+
+  * [Lynda course](https://www.lynda.com/MATLAB-training-tutorials/1646-0.html)
