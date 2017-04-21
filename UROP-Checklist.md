@@ -128,3 +128,45 @@ Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control)
 ### GitHub
 
 If you're on GitHub, great! If you're not, you will need to get an account there. Once you have an account, the person on-boarding you will invite you to the [CBMM GitHub organization](https://github.com/CBMM).
+
+### Python
+
+Python is a programming language that is quite popular in scientific research. There are some associated technologies that make using Python more robust and effective.
+
+#### Which Python version?
+
+There are two versions of Python which are subtly incompatible with each other, Python 2 and Python 3. Python 3 is the version of Python that is intended to be supported in the long run. It used to be very important which version you were on, but not these days. Most things you will want to do with Python can be done with either. If you have no preference, _use the version your advisor prefers_.
+
+#### Where to get it
+
+[The hitchhiker's guide to installing Python](http://python-guide-pt-br.readthedocs.io/en/latest/starting/installation/)
+
+#### How to use it
+
+  * [Python 3 documentation](https://docs.python.org/3/)
+
+    Includes tutorials, HOWTOs, set up help, and references.
+
+  * [Python 2 documentation](https://docs.python.org/2.7/)
+
+    Same as above, but with Python 2
+
+  * [The Hitchhiker's guide to Python](http://python-guide-pt-br.readthedocs.io/en/latest/)
+
+    This guide will not quite teach the basics of Python, but it will teach you a lot about good practices and how to keep your code clean, well understood, and under control.
+
+### virtualenv
+
+Python comes with a tool for installing packages called `pip`. By default `pip` installs packages globally for your system. This can be bad if you have different projects that require conflicting versions of the same package. It also makes it difficult to reproduce your code elsewhere. `virtualenv` is a tool for both Python 2 and 3 that allows you to isolate the installed packages for different projects. It is highly recommended that you always install the dependencies for a project in a virtual environment.
+
+#### Where to get it
+
+[Install it with pip](https://virtualenv.pypa.io/en/stable/installation/)
+
+#### How to use it
+
+  * [Official user guide](https://virtualenv.pypa.io/en/stable/userguide/)
+
+  * [Hitchhiker's guide to virtualenv](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/#virtualenv)
+
+  * [Quick tutorial](http://libzx.so/main/learning/2016/03/13/best-practice-for-virtualenv-and-git-repos.html)
