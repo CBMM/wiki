@@ -20,7 +20,7 @@ A command line shell allows you to interact with your computer through a text ba
 
 You already have a command line. How you access it depends on your distribution. For example on Ubuntu you can open it by pressing `Ctrl + Alt + T`.
 
-##### Mac
+##### Mac OS X
 
 You already have a command line. You can access it by opening the `Terminal` application.
 
@@ -67,9 +67,9 @@ SSH is a network protocol for secure remote access to a machine. We use SSH to c
 
 SSH comes standard on most Linux distributions.
 
-##### Mac
+##### Mac OS X
 
-SSH comes standard on Mac.
+SSH comes standard on Mac OS X.
 
 ##### Windows
 
@@ -99,7 +99,7 @@ Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control)
 
 [Installation instructions here](https://git-scm.com/download/linux)
 
-##### Mac
+##### Mac OS X
 
 [Go here and click on 'Mac OS X'](https://git-scm.com/downloads)
 
