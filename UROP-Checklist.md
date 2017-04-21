@@ -89,9 +89,9 @@ The situation on Windows is a bit different.
 
 ### Git
 
-If you're already comfortable with Git, feel free to skip this section.
+If you're already comfortable with `git`, feel free to skip this section.
 
-Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control). It will keep track of your files and changes to those files. This helps keep your projects in a consistent state and easily recoverable from errors. It will also make it easier for you to share your code with others and collaborate on projects.
+`git` is a [Version control system](https://en.wikipedia.org/wiki/Version_control). It will keep track of your files and changes to those files. This helps keep your projects in a consistent state and easily recoverable from errors. It will also make it easier for you to share your code with others and collaborate on projects.
 
 #### Where to get it
 
@@ -124,6 +124,10 @@ Git is a [Version control system](https://en.wikipedia.org/wiki/Version_control)
   * [Github Documentation](https://help.github.com/articles/set-up-git/)
 
     Good documentation that will also set you up with GitHub.
+
+  * [Repository of .gitignore templates](https://github.com/github/gitignore)
+
+    A `.gitignore` file tells `git` which files not to track. These templates will make it easier to use `git` while ignoring noise.
 
 ### GitHub
 
