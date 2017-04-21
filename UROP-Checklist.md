@@ -14,9 +14,9 @@ A command line shell allows you to interact with your computer through a text ba
 
 #### Where to get it
 
-##### Ubuntu
+##### Linux
 
-You already have a command line. You can open it by pressing `Ctrl + Alt + T`.
+You already have a command line. How you access it depends on your distribution. For example on Ubuntu you can open it by pressing `Ctrl + Alt + T`.
 
 ##### Mac
 
@@ -61,7 +61,7 @@ SSH is a network protocol for secure remote access to a machine. We use SSH to c
 
 #### Where to get it
 
-##### Ubuntu
+##### Linux
 
 SSH comes standard on most Linux distributions.
 
