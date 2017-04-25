@@ -16,12 +16,17 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
   * [Matlab](#matlab)
 4. [Environments](#environments)
   * [OpenMind](#openmind)
+  * [Toolkit](#toolkit)
 
 ## Basic Tools
 
 ### Slack
 
-CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away! The person who is on-boarding you should invite you to Slack.
+CBMM has a [Slack](https://slack.com) community. This is the fastest way to get help from our partners at [Obsidian Systems](https://obsidian.systems) and your advisors. On slack we have a #tech channel for answering any and all techincal questions. Ask away!
+
+#### Sign Up
+
+[Click here to sign up.](https://eitgroup.slack.com/x-167842209222-173638783185/signup) You will have to use your mit email address.
 
 ---
 
@@ -247,3 +252,13 @@ OpenMind is a computing cluster shared by all neuroscience at MIT. You will need
     Will be a little anemic until we've developed more tools for working with OpenMind.
 
 ---
+
+### Toolkit
+
+This is the wiki of the [CBMM Toolkit](https://github.com/CBMM/toolkit)! It contains useful scripts and tools to make it easier to manage projects. A lot of the resources here assume that you are using it.
+
+#### Where to get it
+
+Once you've set up [GitHub](#github) you can clone the toolkit anywhere:
+
+`git clone git@github.com:CBMM/toolkit.git`
