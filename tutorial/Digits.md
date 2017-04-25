@@ -116,6 +116,13 @@ def tensorflow_example():
     return result
 ```
 
+---
+
+#TODO Add a main entrypoint to run the code from
+#TODO Section on running the trainer locally
+#TODO Section on fixing the test
+#TODO Section on commiting code
+
 ## Deploying the code
 
 We'll use GitHub to coordinate our code across environments. First [create a new GitHub repository](https://github.com/new) for the project. You can name it `digits` here as well. Do not add a `.gitignore`, `README` or `license`. Once that is done we will add the GitHub repository as a [remote](https://help.github.com/articles/about-remote-repositories/) of our local project and push our code:
