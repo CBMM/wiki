@@ -6,17 +6,17 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
 
 1. [Introduction](#getting-started-at-cbmm)
 2. [Basic Tools](#basic-tools)
-  * [Slack](#slack)
-  * [Command Line](#command-line)
-  * [SSH](#ssh)
-  * [Git](#git)
-  * [GitHub](#github)
+    * [Slack](#slack)
+    * [Command Line](#command-line)
+    * [SSH](#ssh)
+    * [Git](#git)
+    * [GitHub](#github)
 3. [Programming Languages](#programming-languages)
-  * [Python](#python)
-  * [Matlab](#matlab)
+    * [Python](#python)
+    * [Matlab](#matlab)
 4. [Environments](#environments)
-  * [OpenMind](#openmind)
-  * [Toolkit](#toolkit)
+    * [OpenMind](#openmind)
+    * [Toolkit](#toolkit)
 
 ## Basic Tools
 
