@@ -146,7 +146,7 @@ $ nose2
 > ======================================================================
 > ERROR: test_example (tests.test_example.SampleTestSuite)
 > ----------------------------------------------------------------------
----
+```
 
 This test wasn't very useful but we should fix it as a matter of habit. When writing far more complicated programs tests will become essential to keeping all the details in order. To fix this trivial test:
 
@@ -213,7 +213,7 @@ The `git status` prompt suggested that we can use `git commit -a`. This would st
 A good way to commit is `git add -p`. This will prompt you to examine every change that isn't staged and decide what you want to do with it. There are a lot of options but the most important ones are:
 
 | cmd | Function |
-|:---:|---|
+|:---:| --- |
 | y   | Add this hunk |
 | n   | Don't stage this hunk |
 | q   | Don't stage this hunk and quit |
@@ -221,6 +221,8 @@ A good way to commit is `git add -p`. This will prompt you to examine every chan
 | s   | Split this hunk into smaller units |
 
 Even though we know the changes we've made are the ones we want and it's a simple commit, it's still good to be in the habit of examining each set of changes at least a little bit when commiting it.
+
+---
 
 Once you've committed the code, examine the output of `git status`:
 
@@ -268,7 +270,7 @@ $ git clone git@github.com:CBMM/toolkit.git --recursive
 # gpu-16 is a polestar node with a more modern version of glibc, required for tensorflow
 polestar$ ssh -A gpu-16
 
-gpu-16$ toolkit/clone-project danharaj digits master
+gpu-16$ toolkit/clone-project $YOURUSERNAME digits master
 gpu-16$ cd digits
 gpu-16$ source venv/bin/activate
 gpu-16$ python -c 'from digits import example; example.softmax_digits();'
