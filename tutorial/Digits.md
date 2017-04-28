@@ -146,7 +146,7 @@ $ nose2
 > ======================================================================
 > ERROR: test_example (tests.test_example.SampleTestSuite)
 > ----------------------------------------------------------------------
----
+```
 
 This test wasn't very useful but we should fix it as a matter of habit. When writing far more complicated programs tests will become essential to keeping all the details in order. To fix this trivial test:
 
@@ -213,7 +213,7 @@ The `git status` prompt suggested that we can use `git commit -a`. This would st
 A good way to commit is `git add -p`. This will prompt you to examine every change that isn't staged and decide what you want to do with it. There are a lot of options but the most important ones are:
 
 | cmd | Function |
-|:---:|---|
+|:---:| --- |
 | y   | Add this hunk |
 | n   | Don't stage this hunk |
 | q   | Don't stage this hunk and quit |
