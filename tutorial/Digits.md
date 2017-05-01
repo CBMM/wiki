@@ -268,6 +268,7 @@ $ ssh -A $YOURUSERNAME@polestar.mit.edu
 $ git clone git@github.com:CBMM/toolkit.git --recursive
 
 # gpu-16 is a polestar node with a more modern version of glibc, required for tensorflow
+# any sufficiently up-to-date node is usable
 polestar$ ssh -A gpu-16
 
 gpu-16$ toolkit/clone-project $YOURUSERNAME digits master
