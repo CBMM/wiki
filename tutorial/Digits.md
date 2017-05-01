@@ -276,5 +276,3 @@ gpu-16$ cd digits
 gpu-16$ source venv/bin/activate
 gpu-16$ python -c 'from digits import example; example.softmax_digits();'
 ```
-
-And there you go!
