@@ -5,18 +5,23 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
 #### Table of Contents
 
 1. [Introduction](#getting-started-at-cbmm)
-2. [Basic Tools](#basic-tools)
+2. [Windows Users](#windows-users)
+3. [Basic Tools](#basic-tools)
     * [Slack](#slack)
     * [Command Line](#command-line)
     * [SSH](#ssh)
     * [Git](#git)
     * [GitHub](#github)
-3. [Programming Languages](#programming-languages)
+4. [Programming Languages](#programming-languages)
     * [Python](#python)
     * [Matlab](#matlab)
-4. [Environments](#environments)
+5. [Environments](#environments)
     * [OpenMind](#openmind)
     * [Toolkit](#toolkit)
+
+## Windows Users
+
+Doing scientific computing on Windows is very difficult; we don't really support it. The best thing you can do is get a Linux environment to work in. We recommend using [VirtualBox](https://www.virtualbox.org/) which will let you run a virtual Linux machine from within Windows. Once you have VirtualBox, you can install a virtual Ubuntu machine for your work at CBMM. A guide to this process is [located here](https://linus.nci.nih.gov/bdge/installUbuntu.html).
 
 ## Basic Tools
 
@@ -45,22 +50,6 @@ You already have a command line. How you access it depends on your distribution.
 ##### Mac OS X
 
 You already have a command line. You can access it by opening the `Terminal` application.
-
-##### Windows
-
-On Windows the situation is a little trickier. The command line on Windows by default isn't functional enough to perform the basic tasks you will be doing regularly. You have a few options:
-
-  * [Install Bash on ubuntu on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about)
-
-    This is the most thorough solution but requires you to have a modern Windows machine. If you install this, then you ought to do all of your CBMM work in the Linux subsystem and never on Windows itself. This solution allows you to follow along with all of our guides and resources as if you're on an Ubuntu machine.
-
-  * [Use the Bash shell that comes with git for windows](https://git-for-windows.github.io/)
-
-    This is a lightweight option if you don't want to get a UNIX shell. Note that this shell won't allow you to do more sophisticated things than interact with Git.
-
-  * [Use PowerShell](https://msdn.microsoft.com/en-us/powershell/mt173057.aspx)
-
-    This option is quite powerful and natively Windows, but we don't have many resources for how to use it, and no one at CBMM really uses it. If you're already comfortable using PowerShell, all the power to you! However, you'll still need to learn how to use a UNIX command line because that is what is available on OpenMind and Polestar.
 
 #### How to use it
 
@@ -95,16 +84,6 @@ SSH comes standard on most Linux distributions.
 
 SSH comes standard on Mac OS X.
 
-##### Windows
-
-The situation on Windows is a bit different.
-
-  * If you're using Ubuntu on Windows, you have SSH in your Ubuntu subsystem.
-
-  * If you're using git bash, it comes with ssh.
-
-  * [Get putty otherwise](http://www.putty.org/)
-
 #### How to use it
 
   * [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
@@ -128,10 +107,6 @@ If you're already comfortable with `git`, feel free to skip this section.
 ##### Mac OS X
 
 [Go here and click on 'Mac OS X'](https://git-scm.com/downloads)
-
-##### Windows
-
-[Git for Windows](https://git-for-windows.github.io/)
 
 #### How to use it
 
