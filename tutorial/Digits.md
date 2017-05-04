@@ -10,7 +10,7 @@ Let's set up a python project with TensorFlow. CBMM has a [template project](htt
 $ toolkit/new-project digits
 ```
 
-NOTE: You will have to set up your GitHub account with an SSH key first. You'll also need the [CBMM toolkit](https://github.com/CBMM/toolkit) cloned locally. Check the [UROP-Checklist] for a full list of prerequisites.
+NOTE: You will have to set up your GitHub account with an SSH key first. You'll also need the [CBMM toolkit](https://github.com/CBMM/toolkit) cloned locally. Check the [[UROP-Checklist]] for a full list of prerequisites.
 
 Now let's enter the virtual environment that the script set up for us:
 
