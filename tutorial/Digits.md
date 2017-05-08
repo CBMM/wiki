@@ -249,14 +249,16 @@ $ git commit -m "implement softmax digit classification"
 
 `git commit -m` takes a parameter that describes the contents of the commit. If you use `git commit` instead, your text editor will be opened for you to type out a commit message.
 
-## Run the code on Polestar
+### Deploying your code
 
 We'll use GitHub to coordinate our code across environments. First [create a new GitHub repository](https://github.com/new) for the project. You can name it `digits` here as well. Do not add a `.gitignore`, `README` or `license`. Once that is done we will add the GitHub repository as a [remote](https://help.github.com/articles/about-remote-repositories/) of our local project and push our code:
 
 ```bash
-$ git remote add origin git@github.com:$YOURUSERNAME/digits.git
+$ git remote add origin git@github.com:<YOURUSERNAME>/digits.git
 $ git push -u origin master
 ```
+
+## Run the code on Polestar
 
 Now you can log on to Polestar and clone your repository there:
 
@@ -271,8 +273,98 @@ $ git clone git@github.com:CBMM/toolkit.git --recursive
 # any sufficiently up-to-date node is usable
 polestar$ ssh -A gpu-16
 
-gpu-16$ toolkit/clone-project $YOURUSERNAME digits master
+gpu-16$ toolkit/clone-project <YOURUSERNAME> digits master
 gpu-16$ cd digits
 gpu-16$ source venv/bin/activate
 gpu-16$ python -c 'from digits import example; example.softmax_digits();'
 ```
+
+## Run the code on OpenMind
+
+Running on OpenMind is a little different. We can't use virtualenv out of the box. In fact, we shouldn't be doing  dependency management on OpenMind at all. The recommended way to run code on OpenMind is to use Singularity. We've packaged up some singularity containers with some common sets of tools which you can find on the [[OpenMind]] page. Here we'll be using TensorFlow with Python 3.5.
+
+OpenMind uses SLURM to allocate its resources to user jobs. To use SLURM we have to use a script that tells it what to do. Save this file into bin/slurm-job:
+
+```bash
+#!/usr/bin/env bash
+#SBATCH --job-name=softmax_digits
+#SBATCH --output digits.out
+#SBATCH --ntasks=1
+#SBATCH --gres=gpu:1
+
+set -euxo pipefail
+
+# allows us to use modules within a script
+source ${MODULESHOME}/init/bash
+
+module add openmind/singularity/2.2.1
+
+singularity exec --bind /om:/om py35-tf.img python -c 'from digits import example; example.softmax_digits();'
+```
+
+Once that is saved, you need to mark it as executable with `chmod +x bin/slurm-job`. Having done that, commit the script to your repository and push it. Now we can log into openmind and run the job:
+
+```bash
+$ ssh -A <YOURUSERNAME>@polestar.mit.edu
+
+# /om is where you should put all of your work. Your home directory is only allowed 5GB of space
+# /om has a much laxer limit.
+openmind$ cd /om/user/<YOURUSERNAME>
+openmind$ git clone git@github.com:<YOURUSERNAME>/digits
+openmind$ cd digits
+
+# the following line fetches the image, decompresses it, and saves it
+openmind$ wget -O - https://resolution.cbmm.obsidian.systems/assets/py35-tf.img.gz | gunzip -c > py35-tf.img
+
+openmind$ sbatch bin/slurm-job
+```
+
+To check on the status of your queued jobs you can use this command:
+
+```bash
+openmind$ squeue --user=$USER
+# Sample output
+-bash-4.2$ squeue --user=$USER
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           8526071 om_all_no softmax_ danharaj  R       0:03      1 node003
+
+```
+
+To check on the status of a particular job, like the one we just ran, you can do:
+
+```bash
+openmind$ scontrol show job <JOBID>
+# Sample output
+-bash-4.2$ scontrol show job 8526071
+JobId=8526071 JobName=softmax_digits
+   UserId=danharaj(155530) GroupId=cbmm(88891) MCS_label=N/A
+   Priority=55627 Nice=0 Account=cbmm QOS=normal
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:30 TimeLimit=00:10:00 TimeMin=N/A
+   SubmitTime=2017-05-08T11:55:19 EligibleTime=2017-05-08T11:55:19
+   StartTime=2017-05-08T11:55:20 EndTime=2017-05-08T11:55:50 Deadline=N/A
+   PreemptTime=None SuspendTime=None SecsPreSuspend=0
+   Partition=om_all_nodes AllocNode:Sid=openmind7:41400
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=node003
+   BatchHost=node003
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=2,mem=4G,node=1,gres/gpu=1
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=(null) Gres=gpu:1 Reservation=(null)
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/om/user/danharaj/digits/bin/slurm-job
+   WorkDir=/om/user/danharaj/digits
+   StdErr=/om/user/danharaj/digits/digits.out
+   StdIn=/dev/null
+   StdOut=/om/user/danharaj/digits/digits.out
+   Power=
+```
+
+Note that the console output of our job was saved to `digits.out`. For more serious experiments you'll want to save your results to files formatted for consumption by data analysis tools.
+
+## Conclusion
+
+What we've gone over is the basic set up for writing and running an experiment. This template can serve as a model for more sophisticated experiments: The overall infrastructure does not change that much. Let us know about any questions you have in #tech on Slack!
