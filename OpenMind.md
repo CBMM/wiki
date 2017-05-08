@@ -41,3 +41,15 @@ For example, to download, unpack and shell into the container with Theano and Ke
 /om/user/$USER $ gunzip py36-theano-keras.img.gz
 /om/user/$USER $ singularity shell -B /om:/om py36-theano-keras.img
 ```
+
+### SLURM
+
+SLURM is the system used to allocate OpenMind resources to particular jobs. You can check out the [[Digits]] tutorial for a simple example of running a job. Here are some more resources on using SLURM:
+
+[The Slurm documentation](https://slurm.schedmd.com/)
+
+[Summary of Slurm commands](https://slurm.schedmd.com/pdfs/summary.pdf)
+
+[NCCS Slurm info](https://www.nccs.nasa.gov/user_info/slurm)
+
+[CBMM tutorial on working on OpenMind](https://www.youtube.com/watch?v=NGHlPNiYJcA) by Evan Remington
