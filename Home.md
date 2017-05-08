@@ -15,3 +15,7 @@ Welcome to the CBMM wiki! This wiki is a place to gather documentation on how to
 These tutorials are step by step guides that get a project set up and running on OpenMind.
 
 [[Digits]]
+
+### External Resources
+
+[Check out this awesome presentation on writing good scientific code!](https://github.com/edeno/Better-Science-Code)
