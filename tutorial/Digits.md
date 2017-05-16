@@ -12,7 +12,13 @@ $ toolkit/new-project digits
 
 NOTE: You will have to set up your GitHub account with an SSH key first. You'll also need the [CBMM toolkit](https://github.com/CBMM/toolkit) cloned locally. Check the [[UROP-Checklist]] for a full list of prerequisites.
 
-Now let's enter the virtual environment that the script set up for us:
+If you want to use virtual-env, which this tutorial assumes, there is a script for initializing an environment for a folder:
+
+```bash
+$ toolkit/init-virtualenv digits
+```
+
+We can enter the virtual environment like this:
 
 ```bash
 $ cd digits
@@ -254,7 +260,7 @@ $ git commit -m "implement softmax digit classification"
 We'll use GitHub to coordinate our code across environments. First [create a new GitHub repository](https://github.com/new) for the project. You can name it `digits` here as well. Do not add a `.gitignore`, `README` or `license`. Once that is done we will add the GitHub repository as a [remote](https://help.github.com/articles/about-remote-repositories/) of our local project and push our code:
 
 ```bash
-$ git remote add origin git@github.com:<YOURUSERNAME>/digits.git
+$ git remote add origin git@github.com:<Github-Username>/digits.git
 $ git push -u origin master
 ```
 
@@ -264,7 +270,7 @@ Now you can log on to Polestar and clone your repository there:
 
 ```bash
 # ssh -A lets you use your local private key to authenticate inside of an SSH session
-$ ssh -A $YOURUSERNAME@polestar.mit.edu
+$ ssh -A <Kerberos-Username>@polestar.mit.edu
 
 # if you don't already have the toolkit cloned, do it here
 $ git clone git@github.com:CBMM/toolkit.git --recursive
@@ -273,7 +279,7 @@ $ git clone git@github.com:CBMM/toolkit.git --recursive
 # any sufficiently up-to-date node is usable
 polestar$ ssh -A gpu-16
 
-gpu-16$ toolkit/clone-project <YOURUSERNAME> digits master
+gpu-16$ toolkit/clone-project <Github-Username> digits master
 gpu-16$ cd digits
 gpu-16$ source venv/bin/activate
 gpu-16$ python -c 'from digits import example; example.softmax_digits();'
@@ -299,18 +305,18 @@ source ${MODULESHOME}/init/bash
 
 module add openmind/singularity/2.2.1
 
-singularity exec --bind /om:/om py35-tf.img python -c 'from digits import example; example.softmax_digits();'
+singularity exec --bind /om:/om ./py35-tf.img python -c 'from digits import example; example.softmax_digits();'
 ```
 
 Once that is saved, you need to mark it as executable with `chmod +x bin/slurm-job`. Having done that, commit the script to your repository and push it. Now we can log into openmind and run the job:
 
 ```bash
-$ ssh -A <YOURUSERNAME>@polestar.mit.edu
+$ ssh -A <Kerberos-Username>@openmind7.mit.edu
 
 # /om is where you should put all of your work. Your home directory is only allowed 5GB of space
 # /om has a much laxer limit.
-openmind$ cd /om/user/<YOURUSERNAME>
-openmind$ git clone git@github.com:<YOURUSERNAME>/digits
+openmind$ cd /om/user/<Kerberos-Username>
+openmind$ git clone git@github.com:<Github-Username>/digits
 openmind$ cd digits
 
 # the following line fetches the image, decompresses it, and saves it
