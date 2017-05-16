@@ -280,6 +280,7 @@ $ git clone git@github.com:CBMM/toolkit.git --recursive
 polestar$ ssh -A gpu-16
 
 gpu-16$ toolkit/clone-project <Github-Username> digits master
+gpu-16$ toolkit/init-virtualenv digits
 gpu-16$ cd digits
 gpu-16$ source venv/bin/activate
 gpu-16$ python -c 'from digits import example; example.softmax_digits();'
