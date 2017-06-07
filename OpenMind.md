@@ -46,6 +46,7 @@ This is a list of containers we currently host:
 | Python 3.6   | [Right click to copy link](https://resolution.cbmm.obsidian.systems/assets/py36.img.gz) |
 | Python 3.6, Theano, and Keras   | [Right click to copy link](https://resolution.cbmm.obsidian.systems/assets/py36-theano-keras.img.gz) |
 | Python 3.5, Tensorflow | [Right click to copy link](https://resolution.cbmm.obsidian.systems/assets/py35-tf.img.gz) |
+| Python 3.5, PyTorch | [Right click to copy link](https://resolution.cbmm.obsidian.systems/assets/py35-torch.img.gz) |
 
 For example, to download, unpack and shell into the container with Theano and Keras on it:
 
