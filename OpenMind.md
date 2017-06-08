@@ -37,7 +37,7 @@ $ module add openmind/singularity/dev-8g4384538
 
 #### Where to get containers
 
-Singularity can pull docker containers. If you use the dev version of singularity you can also use Singularity Hub. We also maintain a cache of some singularity images that you can download with `wget`. If you want an image that you can't find on docker or singularity hub and is difficult to build on your own, you can request a custom image on #tech in Slack. An engineer will build it for you and add it to our cache.
+Singularity can pull docker containers. If you use a recent version of singularity (2.3 or later) you can also use Singularity Hub. We also maintain a cache of some singularity images that you can download with `wget`. If you want an image that you can't find on docker or singularity hub and is difficult to build on your own, you can request a custom image on #tech in Slack. An engineer will build it for you and add it to our cache.
 
 This is a list of containers we currently host:
 
