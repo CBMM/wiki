@@ -33,20 +33,20 @@ Another method is to use [x2go](http://wiki.x2go.org/doku.php), which you can do
 #### Connecting to OpenMind
 
 Open x2goclient and configure a new session
-	hostname: openmind7.mit.edu
-	login: your-username
-	SSH post: 22
-	Use RSA/DSA [...] : leave empty unless you know what it means
-	Try auto-login [...]: check
-	Use Proxy server [...]: uncheck
-	Session type: choose XFCE
-	Command: leave empty
+hostname: openmind7.mit.edu
+login: your-username
+SSH post: 22
+Use RSA/DSA [...] : leave empty unless you know what it means
+Try auto-login [...]: check
+Use Proxy server [...]: uncheck
+Session type: choose XFCE
+Command: leave empty
 
 Once you get the interface, you can open up terminals and then connect to the nodes.  To run an interactive job (e.g., if you want to use the MATLAB GUI) you can run the following commands: 
 
 srun --x11 --pty bash    
-  module add mit/matlab/2016b
-  matlab
+module add mit/matlab/2016b
+matlab
 
 
 ***Important: Never run Matlab or any intensive job on the head node but instead always use srun into one of the gpu nodes before doing any work***
