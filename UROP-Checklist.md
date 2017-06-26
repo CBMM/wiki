@@ -19,9 +19,63 @@ Welcome to CBMM! The purpose of this checklist is to prepare your system to run 
     * [OpenMind](#openmind)
     * [Toolkit](#toolkit)
 
-## Windows Users
 
-Doing scientific computing on Windows is very difficult; we don't really support it. The best thing you can do is get a Linux environment to work in. We recommend using [VirtualBox](https://www.virtualbox.org/) which will let you run a virtual Linux machine from within Windows. Once you have VirtualBox, you can install a virtual Ubuntu machine for your work at CBMM. A guide to this process is [located here](https://linus.nci.nih.gov/bdge/installUbuntu.html).
+## Connecting to computational resources
+
+Almost all scientific computing should be done one of two linux systems which are: 1) polestar or 2) openmind. You can connect to these systems in a number of ways that depend on the operating system your computer is using which we describe below.
+
+### Windows Users
+
+If you use a Windows system, one method to connect to polestar/OpenMind recommend using [VirtualBox](https://www.virtualbox.org/) which will let you run a virtual Linux machine from within Windows. Once you have VirtualBox, you can install a virtual Ubuntu machine for your work at CBMM. A guide to this process is [located here](https://linus.nci.nih.gov/bdge/installUbuntu.html).
+
+Another method is to use [x2go](http://wiki.x2go.org/doku.php), which you can download from  [http://wiki.x2go.org/doku.php](http://wiki.x2go.org/doku.php). Once you have installed x2go on our system you can connect to OpenMind and polestar as described below. 
+
+#### Connecting to OpenMind
+
+Open x2goclient and configure a new session
+	hostname: openmind7.mit.edu
+	login: your-username
+	SSH post: 22
+	Use RSA/DSA [...] : leave empty unless you know what it means
+	Try auto-login [...]: check
+	Use Proxy server [...]: uncheck
+	Session type: choose XFCE
+	Command: leave empty
+
+Once you get the interface, you can open up terminals and then connect to the nodes.  To run an interactive job (e.g., if you want to use the MATLAB GUI) you can run the following commands: 
+
+srun --x11 --pty bash    
+  module add mit/matlab/2016b
+  matlab
+
+
+***Important: Never run Matlab or any intensive job on the head node but instead always use srun into one of the gpu nodes before doing any work***
+
+
+#### Connecting to polestar
+
+Connecting to polestar using x2go is similar to connecting to OpenMind, and you should use the same configuration options - i.e., use XFCE, etc.
+
+Once you get the interface on polestar, you should also open up a terminal and but connecting to polestar nodes involves running a different set of commands which is:
+
+ssh -Y gpu-15   (or gpu-13, gpu-14 etc) to see wh
+matlab &     (to start a new Maltab interactive session)
+
+***Important: Never run Matlab or any intensive job on the head node but instead always ssh into one of the gpu nodes before doing any work***
+
+
+### Mac Users
+
+You can also use x2go for Macs. Additionally you can use X11. 
+
+
+### Linux Users
+
+
+You can also use x2go for Linux. Additionally you can...
+
+
+
 
 ## Basic Tools
 
