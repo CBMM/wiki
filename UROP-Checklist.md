@@ -265,6 +265,7 @@ OpenMind is a computing cluster shared by all neuroscience at MIT. You will need
 #### Where to get it
 
 [Getting started with OpenMind](https://github.mit.edu/MGHPCC/OpenMind/wiki/Cookbook:-Getting-started)
+also see the [Poggio labpage on OpenMind wiki](https://github.mit.edu/MGHPCC/OpenMind/wiki/OpenMindForPoggioLab)
 
   You'll have to log in with your MIT credentials in order to access the MIT github. It can take a few days to be granted access to OpenMind.
 
