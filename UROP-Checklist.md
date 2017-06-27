@@ -44,7 +44,7 @@ Open x2goclient and configure a new session
 
 Once you get the interface, you can open up terminals and then connect to the nodes.  To run an interactive job (e.g., if you want to use the MATLAB GUI) you can run the following commands: 
 
-* srun --x11 --pty bash    
+* srun --x11 --time=08:00 --pty bash    
 * module add mit/matlab/2016b
 * matlab
 
