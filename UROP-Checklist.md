@@ -40,7 +40,7 @@ Open x2goclient and configure a new session
 * Try auto-login [...]: check
 * Use Proxy server [...]: uncheck
 * Session type: choose XFCE
- *Command: leave empty
+* Command: leave empty
 
 Once you get the interface, you can open up terminals and then connect to the nodes.  To run an interactive job (e.g., if you want to use the MATLAB GUI) you can run the following commands: 
 
